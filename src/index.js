@@ -23,4 +23,6 @@ else{
 let theme = localStorage.getItem('theme')
 if(theme === 'dark-theme'){
     checkBoxs.checked = true
+    document.querySelector('body').classList.remove('light-theme')
+    document.querySelector('body').classList.add('dark-theme')
 }
